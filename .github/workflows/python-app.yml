@@ -1,0 +1,33 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python application
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Update README.md
+        shell: bash
+        run: |
+          chmod +x .autoupdate/update_md.sh
+          bash .autoupdate/update_md.sh
+      - name: Commit README.md
+        run: |
+          git config --global user.email "1phanatasmas@korea.ac.kr"
+          git config --global user.name "1pha"
+          git add README.md
+          git commit -m "<Action> auto update README.md"
+          git push origin main
