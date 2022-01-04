@@ -58,3 +58,9 @@ k층 n호: apart[k][n-1]
 '''
 for n in range(num):
     print(apart[floor[n]][place[n]-1])
+    
+    
+'''
+메모리제한: 128MB, 시간제한: 1s
+Memory: 29200KB, 시간: 64ms, 코드길이: 563B
+'''
