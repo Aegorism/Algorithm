@@ -7,8 +7,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '**.py'
-      - '**.cpp'
+      - 'Problems/**'
       
   pull_request:
     branches: [main]
