@@ -1,6 +1,6 @@
 # 알고리즘 스터디 레포지토리
 
-**총 16개의 문제와 22개의 해답이 업로드되었습니다.**
+**총 16개의 문제와 23개의 해답이 업로드되었습니다.**
 
 [스터디 노션](https://carnation-dimple-94f.notion.site/Python-Algorithm-Study-704dc9b5686644d0b9088c61ac621b46)
 
